@@ -1,0 +1,51 @@
+
+.th__slide__anim-right {
+    animation: th__slide__anim-right 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+    opacity: 0;
+  }
+  @keyframes th__slide__anim-right {
+    0% {
+      transform: translateX(5%);
+      clip-path: inset(0 0 0 100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+  .th__slide__anim-left {
+    animation: th__slide__anim-left 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+    opacity: 0;
+  }
+  @keyframes th__slide__anim-left {
+    0% {
+      transform: translateX(-5%);
+      clip-path: inset(0 100% 0 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+
+  /****************** Start Jarallax Animation ******************/
+  .jarallax {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .jarallax > .jarallax-img,
+  picture.jarallax-img img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+/****************** End Jarallax Animation ******************/

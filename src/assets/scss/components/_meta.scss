@@ -1,0 +1,26 @@
+/* ========================
+Start Meta
+=------------------------------------*/
+.th__meta{
+    a{
+        gap: 6px;
+        &__text{
+            @include th__common-trans;
+        }
+        &:hover{
+            .th__meta__text{
+                color: var(--th__theme-primary-color);
+            }
+        }
+        i{
+            font-size: 15px;
+            &.fa-book-open-cover{
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+}
+/* ========================
+End Meta
+=------------------------------------*/

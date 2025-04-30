@@ -1,0 +1,27 @@
+{
+  "name": "stadium",
+  "version": "1.0.0",
+  "description": "Stadium project build system using Gulp",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "del": "^7.1.0",
+    "fs-extra": "^11.3.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.87.0"
+  }
+}

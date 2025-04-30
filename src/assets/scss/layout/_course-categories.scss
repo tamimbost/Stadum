@@ -1,0 +1,49 @@
+  /* ========================
+Start Categories Area Home 3
+ =------------------------------------*/
+ .th__categories-area{
+    z-index: 1;
+    &__shep-1,
+    &__shep-2,
+    &__shep-3{
+        z-index: -1;
+    }
+    &__shep-3{
+        left: 60px;
+        bottom: 160px;
+        animation: th__bounceY 4s linear infinite;
+        @include th__screen-767{
+            bottom: 30px;
+        }
+    }
+    .th__categories-content{
+        height: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: block;
+        &:hover{
+            .th__categories-content__text-wrapper{
+                .th__categories-content__categories-name{
+                    color: var(--th__theme-primary-color);
+                }
+            }
+            .th__categories-content__icon{
+                transform: rotateY(360deg);
+            }
+
+        }
+        &__icon,
+        &__categories-name{
+            @include th__common-trans;
+        }
+        &__categories-name{
+            @include th__screen-1499{
+                font-size: 22px;
+                line-height: 34px;
+            }
+        }
+    }
+ }
+   /* ========================
+End Categories Area Home 3
+ =------------------------------------*/

@@ -1,0 +1,198 @@
+// Start Button Area
+.th__primary-button,
+.th__secondary-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    text-decoration: none;
+    outline: none;
+    gap: 8px;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.5);
+    transition-delay: 0s;
+    position: relative;
+    font-weight: var(--th__fw-medium);
+    &.th__btn-style-2{
+        padding: 16px 32px;
+    }
+    &.th__secondary-button{
+        border: 1px solid var(--th__theme-secondary-color);
+        font-size: 16px;
+        padding: 10px 24px;
+        &.btn-style-4{
+            padding: 9px 24px;
+            border-color: var(--th__theme-border-color);
+            &.nav-link{
+                &.active{
+                    .th__secondary-button__text::before{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &.btn-style-2{
+            border-color:var(--th__theme-border-color);
+            font-size: 14px;
+            line-height: 21px;
+            padding: 3.5px 10px;
+            .th__secondary-button__text::before{
+                color: var(--th__theme-primary-color);
+            }
+        }
+        &.btn-style-3{
+            padding: 7px 24px;
+            border-color: var(--th__theme-border-color);
+        }
+
+    }
+}
+.th__primary-button:hover{
+    transition-delay: .3s;
+}
+.th__primary-button:hover::after{
+    top: 0%;
+}
+.th__primary-button:hover .th__primary-button__text::before{
+    transform: translateY(-240%);
+    opacity: 0;
+}
+.th__primary-button:hover .th__primary-button__text::after{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.th__primary-button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--th__theme-secondary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+.th__primary-button__text{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.th__primary-button__text::before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    color: #fff;
+    content: attr(data-visible);
+    transform: translateY(0);
+    font-weight: var(--th__fw-medium);
+}
+.th__primary-button__text::after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    content: attr(data-hidden);
+    font-weight: var(--th__fw-medium);
+}
+.th__primary-button__icon{
+    position: relative;
+    top: -2px;
+    transition: .5s ease-in-out;
+    font-weight: var(--th__fw-medium);
+}
+
+// End Button Area
+
+// Start Seconday button
+.th__secondary-button{
+    &:hover{
+        transition-delay: .3s;
+        border-color: var(--th__theme-primary-color);
+        .th__secondary-button__icon{
+            svg{
+                path{
+                    stroke: var(--th__primary-color);
+                }
+            }
+        }
+    }
+
+} 
+.th__secondary-button:hover::after{
+    top: 0%;
+}
+.th__secondary-button:hover .th__secondary-button__text::before{
+    transform: translateY(-240%);
+    opacity: 0;
+}
+.th__secondary-button:hover .th__secondary-button__text::after{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.th__secondary-button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--th__theme-primary-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+.th__secondary-button__text{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: var(--th__theme-secondary-color);
+}
+.th__secondary-button__text::before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    color: var(--th__theme-secondary-color);
+    content: attr(data-visible);
+    transform: translateY(0);
+    font-weight: var(--th__fw-medium);
+}
+.th__secondary-button__text::after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    content: attr(data-hidden);
+    font-weight: var(--th__fw-medium);
+}
+.th__secondary-button__icon{
+    position: relative;
+    top: -1px;
+    transition: .5s ease-in-out;
+    font-weight: var(--th__fw-medium);
+    svg{
+        path{
+            @include th__common-trans;
+        }
+    }
+}
+
+// End Secondary Button

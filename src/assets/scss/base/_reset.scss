@@ -1,0 +1,109 @@
+/********* Start Full Site Deafult CSS  ***************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--th__primary-font);
+  color: var(--th__theme-slate-gray);
+  font-size: var(--th__fs-sm);
+  line-height: var(--th__lh-sm);
+  overflow-y: auto;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--th__secondary-font);
+  margin: 0;
+  padding: 0;
+  color: var(--th__theme-secondary-color);
+  font-weight: var(--th__fw-medium);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+article,
+aside,
+span,
+li,
+button,
+input,
+textarea {
+  text-wrap: auto;
+  list-style-type: none;
+}
+
+p,
+a,
+article,
+aside,
+span,
+li,
+a,
+button,
+input,
+textarea {
+  font-family: var(--th__primary-font);
+}
+
+/********* End Full Site Deafult CSS  ***************/

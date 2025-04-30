@@ -1,0 +1,216 @@
+/********* Start Header Sticky Menu Animation ***************/
+@keyframes th__headerStickyAnimations {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  /********* End Header Sticky Menu Animation ***************/
+  
+  /********* Start Bounce Y Animation ***************/
+  @keyframes th__bounceY {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(7px) translateX(15px);
+    }
+    to {
+        transform: translateY(0) translateX(0);
+    }
+  }
+  /********* End Bounce Y Animation ***************/
+  
+  /********* Start Bounce X Animation ***************/
+  @keyframes th__bounceX {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(15px) translateX(7px);
+    }
+    to {
+        transform: translateY(0) translateX(0);
+    }
+  }
+  @keyframes th__bounceX1 {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(15px) translateY(7px);
+    }
+    to {
+        transform: translateX(0) translateY(0);
+    }
+  }
+  /********* End Bounce X Animation ***************/
+  
+  /********* Start Bounce Scale Animation ***************/
+  @keyframes scalingAnimation {
+    0% {
+      scale: 100%;
+    }
+    33.333% {
+      scale: 0.5;
+    }
+    50% {
+      scale: 0.7;
+    }
+    66.666% {
+      scale: 0.9;
+    }
+    100% {
+      scale: 100%;
+    }
+  }
+  @keyframes scalingAnimation1 {
+  0% {
+    scale: 100%;
+  }
+  20%{
+    scale: 95%;
+  }
+  50% {
+    scale: 101%;
+  }
+  100% {
+    scale: 100%;
+  }
+  }
+  /********* End Bounce Scale Animation ***************/
+  
+  /********* Start Roting Animation  ***************/
+  @keyframes th__rotingAnimation{
+  100% {
+        transform: rotate(360deg);
+  }
+  }
+  /********* End Roting Animation  ***************/
+  
+  /********* Start Margin Padding Animation ***************/
+  @keyframes th__LeftBesiteAnimation {
+  0%{
+    left: 0;
+  }
+  25%{
+    left: 5px;
+  }
+  75%{
+    left: 8px;
+  }
+  100%{
+    left: 0;
+  }
+  }
+  /********* End Margin Padding Animatino ***************/
+  
+  
+  /********* Start Shine Animaton ***************/
+  @keyframes th__ImgFlowingAnimation {
+  100% {
+    left: 125%;
+  }
+  }
+  /********* End Shine Animation ***************/
+  
+  
+  // Start Banner Sliding Animation
+  @keyframes th__text-slide {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  }
+  // End Banner Sliding Animation
+  
+  // Start Text Cicle Roting Animation
+  @keyframes th__circle-text-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+  }
+  // End Text Circle Roting Animation
+  
+  // Start Scaling Animation
+  @keyframes th__scalingAnimation {
+  0% {
+    scale: 100%;
+  }
+  33.333% {
+    scale: 0.5;
+  }
+  50% {
+    scale: 0.7;
+  }
+  66.666% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 100%;
+  }
+  }
+  // End Scaling Animation
+  
+  // Start Shain Animation
+  @keyframes th__shine {
+      100% {
+        left: 125%;
+      }
+  }
+  // End Shain Animation
+  
+/* ========================
+ Start Triangle Shep Animation
+=------------------------------------*/
+@keyframes fillFromLeft {
+    to {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fillFromTop {
+    to {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fillFromDiagonal {
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      opacity: 1;
+    }
+  }
+/* ========================
+ End Triangle Shep Animation
+=------------------------------------*/
+
+// Start Tabing Animation
+.tabing-animation{
+    animation: slide-down 2s ease-out;
+}
+@keyframes slide-down {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    50%{
+
+        opacity: 1;
+         transform: translateY(0);
+        
+    }
+}
+// End Tabing Animation

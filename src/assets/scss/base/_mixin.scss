@@ -1,0 +1,76 @@
+/********* Start Flexing Type ***************/
+@mixin th__flex-items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin th__flex-items-start{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+@mixin th__flex-items-end{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+@mixin th__flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/********* End Flexing Type ***************/
+
+/********* Start Hover Transition ***************/
+@mixin th__common-trans{
+    transition: 0.4s linear;
+}
+/********* End Hover Transition  ***************/
+
+/********* Start Border Type  ***************/
+@mixin th__common-border{
+    border-width: 1px;
+    border-style: solid;
+}
+/********* End Border Type  ***************/
+
+/********* Start Social Icons Radius  ***************/
+@mixin th__common-social-icon{
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+}
+/********* End Social Icons Radius  ***************/
+
+/********* Start After Before Style  ***************/
+@mixin th__common-after{
+    content: '';
+    position: absolute;
+}
+@mixin th__common-before{
+    content: '';
+    position: absolute;
+}
+/********* End After Before Style  ***************/
+
+/********* Start Common Position  ***************/
+@mixin th__common-position-absolute{
+    position: absolute;
+}
+@mixin th__common-position-relative{
+    position: relative;
+}
+/********* End Common Position  ***************/
+
+// Start Common Social Media 
+@mixin th__common-social-media{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--th__theme-border-color);
+}
+// End Common Social Media 

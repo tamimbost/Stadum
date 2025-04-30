@@ -1,0 +1,69 @@
+// // Directions
+// $directions: (
+//   pl: padding-left,
+//   pr: padding-right,
+//   pt: padding-top,
+//   pb: padding-bottom,
+//   ml: margin-left,
+//   mr: margin-right,
+//   mt: margin-top,
+//   mb: margin-bottom
+// );
+
+// // Normal device spacing (no responsive)
+// @for $i from 1 through 150 {
+//   @each $short, $property in $directions {
+//     .th__#{$short}-#{$i} {
+//       #{$property}: #{$i}px;
+//     }
+//   }
+// }
+
+// // Mixin call helper function
+// @mixin generate-spacing($breakpoint) {
+//   @for $i from 1 through 150 {
+//     @each $short, $property in $directions {
+//       .th__#{$breakpoint}__#{$short}-#{$i} {
+//         #{$property}: #{$i}px;
+//       }
+//     }
+//   }
+// }
+
+// // Responsive spacings
+// @include th__screen-1499 {
+//   @include generate-spacing(1499);
+// }
+// @include th__screen-1399 {
+//   @include generate-spacing(1399);
+// }
+// @include th__screen-1299 {
+//   @include generate-spacing(1299);
+// }
+// @include th__screen-1199 {
+//   @include generate-spacing(1199);
+// }
+// @include th__screen-1099 {
+//   @include generate-spacing(1099);
+// }
+// @include th__screen-991 {
+//   @include generate-spacing(991);
+// }
+// @include th__screen-865 {
+//   @include generate-spacing(865);
+// }
+// @include th__screen-767 {
+//   @include generate-spacing(767);
+// }
+// @include th__screen-650 {
+//   @include generate-spacing(650);
+// }
+// @include th__screen-575 {
+//   @include generate-spacing(575);
+// }
+// @include th__screen-439 {
+//   @include generate-spacing(439);
+// }
+// @include th__screen-390 {
+//   @include generate-spacing(390);
+// }

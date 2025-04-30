@@ -1,0 +1,77 @@
+/********* @Start Responsive Break Point ***************/
+@mixin th__screen-1499 {
+    @media (max-width: 1499px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-1399 {
+    @media (max-width: 1399px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-1299 {
+    @media (max-width: 1299px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-1199 {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-1099 {
+    @media (max-width: 1099px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-991 {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-767 {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-575 {
+    @media (max-width: 575px) {
+      @content;
+    }
+  }
+  
+  @mixin th__screen-439{
+    @media (max-width:439px){
+      @content;
+    }
+  }
+  
+  @mixin th__screen-865{
+    @media (max-width:865px){
+      @content;
+    }
+  }
+  
+  @mixin th__screen-390{
+    @media (max-width:390px){
+      @content;
+    }
+  }
+  @mixin th__screen-650{
+    @media (max-width:650px){
+      @content;
+    }
+  }
+  @mixin th__screen-480{
+    @media (max-width:480px){
+      @content;
+    }
+  }
+/********* @End Responsive Break Point ***************/

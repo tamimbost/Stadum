@@ -1,0 +1,630 @@
+/*
+Theme Name: Mana Agro - Business HTML Template
+Author: Mana Agro
+Author URI: 
+Tags: Mana, business 
+Description: Mana Agro - Business HTML Template
+Version: 1.0.0
+*/
+/********* base file **********/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /**
+    @Start Defoult Template Color Palet
+  */
+  --th__primary-color:#fff;
+  --th__secondary-color:#000;
+  /**
+    @Start Defoult Template Color Palet
+  */
+  /**
+    @Start Template Color Palet
+  */
+  --th__theme-primary-color:#D3224D;
+  --th__theme-secondary-color:#081933;
+  --th__theme-slate-gray:#506172;
+  --th__theme-abyss-black: #03060E;
+  --th__theme-misty-sliver-blue:#B7C2CC;
+  --th__theme-light-orange:#FF9F43;
+  --th__theme-section-bg:#EEF1F4;
+  --th__theme-varpire-black:#080809;
+  --th__theme-eerie-black:#141422;
+  --th__theme-foggy-slate:#6E7070;
+  --th__theme-lavender-gray:#C6C9D4;
+  --th__theme-light-gray:#E7E7E7;
+  /**
+    @Start Template Color Palet
+  */
+  /** @Start Template Font Family */
+  --th__primary-font:"Plus Jakarta Sans", sans-serif;
+  --th__secondary-font:"Playfair Display", serif;
+  --th__sub-title-font:"Urbanist", sans-serif;
+  /** @End Template Font Family */
+  /**
+    @Start Template Font Weight
+  */
+  --th__fw-normal: normal;
+  --th__fw-thin: 100;
+  --th__fw-elight: 200;
+  --th__fw-light: 300;
+  --th__fw-regular: 400;
+  --th__fw-medium: 500;
+  --th__fw-sbold: 600;
+  --th__fw-bold: 700;
+  --th__fw-ebold: 800;
+  --th__fw-black: 900;
+  /**
+    @EndTemplate Font Weight
+  */
+  /**
+    @Start Template Font Size
+  */
+  --th__fs-xxxl:72px;
+  --th__fs-xxl:40px;
+  --th__fs-xl:28px;
+  --th__fs-lg:24px;
+  --th__fs-md:20px;
+  --th__fs-sm:18px;
+  --th__fs-xsm: 16px;
+  --th__fs-xxsm:14px;
+  --th__icon-font: "Font Awesome 6 Pro";
+  /**
+    @End Template Font Size
+  */
+  /**
+    @Start Template Line Height
+  */
+  --th__lh-xxxl:88px;
+  --th__lh-xxl:48px;
+  --th__lh-xl:40px;
+  --th__lh-lg:36px;
+  --th__lh-md:30px;
+  --th__lh-sm:32px;
+  --th__lh-xsm:28px;
+  --th__lh-xxsm:150%;
+  /**
+    @End Template Line Height
+  */
+  /** @Start Template Border Color */
+  --th__theme-border-color:#D3DBE2;
+  /** @End Template Border Color */
+}
+
+/********* @Start Responsive Break Point ***************/
+/********* @End Responsive Break Point ***************/
+/********* Start Full Site Deafult CSS  ***************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--th__primary-font);
+  color: var(--th__theme-slate-gray);
+  font-size: var(--th__fs-sm);
+  line-height: var(--th__lh-sm);
+  overflow-y: auto;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a,
+ins {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--th__secondary-font);
+  margin: 0;
+  padding: 0;
+  color: var(--th__theme-secondary-color);
+  font-weight: var(--th__fw-medium);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+article,
+aside,
+span,
+li,
+button,
+input,
+textarea {
+  text-wrap: auto;
+  list-style-type: none;
+}
+
+p,
+a,
+article,
+aside,
+span,
+li,
+a,
+button,
+input,
+textarea {
+  font-family: var(--th__primary-font);
+  font-size: var(--th__fs-sm);
+  line-height: var(--th__lh-sm);
+}
+
+/********* End Full Site Deafult CSS  ***************/
+/********* Start Secondary Font  ***************/
+/********* End Secondary Font ***************/
+/********* Start Primary Font  ***************/
+/********* End Primary Font ***************/
+/******** Start Sub Title Font ***********/
+/******* End Sub Title Font ************/
+/********* Start Heading Font Size  ***************/
+h1 {
+  font-size: var(--th__fs-xxxl);
+  line-height: var(--th__lh-xxxl);
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 55px;
+    line-height: 72px;
+  }
+}
+
+h2 {
+  font-size: var(--th__fs-xxl);
+  line-height: var(--th__lh-xxl);
+}
+@media (max-width: 991px) {
+  h2 {
+    font-size: var(--th__fs-xl);
+    line-height: var(--th__lh-xl);
+  }
+}
+
+h3 {
+  font-size: var(--th__fs-xl);
+  line-height: var(--th__lh-xl);
+}
+
+h4 {
+  font-size: var(--th__fs-lg);
+  line-height: var(--th__lh-lg);
+}
+
+h5 {
+  font-size: var(--th__fs-md);
+  line-height: var(--th__lh-md);
+}
+
+h6 {
+  font-size: var(--th__fs-sm);
+  line-height: var(--th__lh-sm);
+}
+
+/********* End Heading Font Size  ***************/
+/********* Start Font Weight ***************/
+.th__fw-100 {
+  font-weight: var(--th__fw-thin);
+}
+
+.th__fw-200 {
+  font-weight: var(--th__fw-elight);
+}
+
+.th__fw-300 {
+  font-weight: var(--th__fw-light);
+}
+
+.th__fw-400 {
+  font-weight: var(--th__fw-regular);
+}
+
+.th__fw-500 {
+  font-weight: var(--th__fw-medium);
+}
+
+.th__fw-600 {
+  font-weight: var(--th__fw-sbold);
+}
+
+.th__fw-700 {
+  font-weight: var(--th__fw-bold);
+}
+
+.th__fw-800 {
+  font-weight: var(--th__fw-ebold);
+}
+
+.th__fw-900 {
+  font-weight: var(--th__fw-black);
+}
+
+/********* End Font Weight ***************/
+/********* Start Font Family   ***************/
+.th__font-primary {
+  font-family: var(--th__primary-font);
+}
+
+.th__font-secondary {
+  font-family: var(--th__secondary-font);
+}
+
+/********* End Font Family  ***************/
+/********* Start Genarel Font Class ***********/
+.th__font-20 {
+  font-size: var(--th__fs-md);
+  line-height: var(--th__lh-md);
+}
+
+.th__font-18 {
+  font-size: var(--th__fs-sm);
+  line-height: var(--th__lh-sm);
+}
+
+.th__font-16 {
+  font-size: var(--th__fs-xsm);
+  line-height: var(--th__lh-xsm);
+}
+
+.th__font-14 {
+  font-size: var(--th__fs-xxsm);
+  line-height: var(--th__lh-xxsm);
+}
+
+/********* End Genarel Font Class ***********/
+/********* Start Flexing Type ***************/
+/********* End Flexing Type ***************/
+/********* Start Hover Transition ***************/
+/********* End Hover Transition  ***************/
+/********* Start Border Type  ***************/
+/********* End Border Type  ***************/
+/********* Start Social Icons Radius  ***************/
+/********* End Social Icons Radius  ***************/
+/********* Start After Before Style  ***************/
+/********* End After Before Style  ***************/
+/********* Start Common Position  ***************/
+/********* End Common Position  ***************/
+/*************** Start Color Palet **************/
+.th__theme-primary-color {
+  color: var(--th__theme-primary-color);
+}
+
+.th__theme-secondary-color {
+  color: var(--th__theme-secondary-color);
+}
+
+.th__slate-gray {
+  color: var(--th__theme-slate-gray);
+}
+
+.th__abyss-black {
+  color: var(--th__theme-abyss-black);
+}
+
+.th__misty-sliver-blue {
+  color: var(--th__theme-misty-sliver-blue);
+}
+
+.th__light-orange {
+  color: var(--th__theme-light-orange);
+}
+
+.th__varpire-black {
+  color: var(--th__theme-varpire-black);
+}
+
+.th__eerie-black {
+  color: var(--th__theme-eerie-black);
+}
+
+.th__foggy-slate {
+  color: var(--th__theme-foggy-slate);
+}
+
+.th__primary-color {
+  color: var(--th__primary-color);
+}
+
+.th__secondary-color {
+  color: var(--th__secondary-color);
+}
+
+.th__lavender-gray {
+  color: var(--th__theme-lavender-gray);
+}
+
+.th__light-gray {
+  color: var(--th__theme-light-gray);
+}
+
+.th__theme-primary-color-bg {
+  background-color: var(--th__theme-primary-color);
+}
+
+.th__theme-secondary-color-bg {
+  background-color: var(--th__theme-secondary-color);
+}
+
+.th__slate-gray-bg {
+  background-color: var(--th__theme-slate-gray);
+}
+
+.th__abyss-black-bg {
+  background-color: var(--th__theme-abyss-black);
+}
+
+.th__misty-sliver-blue-bg {
+  background-color: var(--th__theme-misty-sliver-blue);
+}
+
+.th__light-orange-bg {
+  background-color: var(--th__theme-light-orange);
+}
+
+.th__varpire-black-bg {
+  background-color: var(--th__theme-varpire-black);
+}
+
+.th__eerie-black-bg {
+  background-color: var(--th__theme-eerie-black);
+}
+
+.th__foggy-slate-bg {
+  background-color: var(--th__theme-foggy-slate);
+}
+
+.th__primary-color-bg {
+  background-color: var(--th__primary-color);
+}
+
+.th__secondary-color-bg {
+  background-color: var(--th__secondary-color);
+}
+
+.th__lavender-gray-bg {
+  background-color: var(--th__theme-lavender-gray);
+}
+
+.th__light-gray-bg {
+  background-color: var(--th__theme-light-gray);
+}
+
+/*************** Start Color Palet **************/
+/******** components file ********/
+/************** Start Header Area ******************/
+.th___header-area .th__header-top-bar {
+  background-color: var(--th__theme-secondary-color);
+}
+.th___header-area .th__header-top-bar .th__topbar-header-info {
+  gap: 50px;
+}
+@media (max-width: 480px) {
+  .th___header-area .th__header-top-bar .th__topbar-header-info {
+    row-gap: 15px;
+  }
+}
+.th___header-area .th__header-top-bar .th__topbar-header-info::after {
+  content: "";
+  position: absolute;
+  background-color: var(--th__theme-lavender-gray);
+  left: 54%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 14px;
+}
+@media (max-width: 480px) {
+  .th___header-area .th__header-top-bar .th__topbar-header-info::after {
+    display: none;
+  }
+}
+.th___header-area .th__header-top-bar .th__topbar-header-link {
+  gap: 35px;
+}
+.th___header-area .th__header-top-bar .th__topbar-header-link__user-details::after {
+  content: "";
+  position: absolute;
+  background-color: var(--th__theme-light-gray);
+  left: 113%;
+  top: 54%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+}
+.th___header-area .th__header-top-bar .th__topbar-header-link__faq-page::after {
+  content: "";
+  position: absolute;
+  background-color: var(--th__theme-light-gray);
+  right: -32%;
+  top: 54%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+}
+
+/************** End Header Area ******************/
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+.main-menu ul li a {
+  padding: 10px 20px;
+  color: var(--th__theme-secondary-color);
+  transition: 0.4s linear;
+  position: relative;
+}
+.main-menu ul li.menu-item-has-children > a {
+  padding-right: 42px;
+}
+.main-menu ul li.menu-item-has-children > a::after {
+  content: "\f078";
+  font-family: var(--th__icon-font) !important;
+  top: 54%;
+  transform: translateY(-50%);
+  right: 18px;
+  position: absolute;
+  font-size: 14px;
+}
+.main-menu ul li.menu-item-has-children .mega-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: var(--th__theme-section-bg);
+  padding: 24px;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  width: 835px;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.main-menu ul li.menu-item-has-children .mega-menu li .mega-menu-box {
+  position: relative;
+}
+.main-menu ul li.menu-item-has-children .mega-menu li .mega-menu-box .mega-menu-img {
+  position: relative;
+}
+.main-menu ul li.menu-item-has-children .mega-menu li .mega-menu-box .mega-menu-img__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.main-menu ul li.menu-item-has-children .mega-menu li .mega-menu-box .mega-menu-img__overlay .th__primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px !important;
+  font-size: var(--th__fs-xxsm);
+  color: var(--th__primary-color);
+}
+
+/************* Start Lang Swiching *********************/
+.language-selector {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.selected-language {
+  display: flex;
+  align-items: center;
+  color: var(--vs__primary-color);
+}
+
+.flag {
+  width: 24.421px;
+  height: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown-icon {
+  margin-left: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--th__primary-color);
+  border: 1px solid var(--th__primary-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  display: none;
+  z-index: 100;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.language-option:hover {
+  background-color: #f5f5f5;
+}
+
+/************* End Lang Swiching *********************/
+/******** pages file **********/
+/******** theme file **********/
+/************* Start Site Custom Container *************/
+.th__container {
+  max-width: 1650px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************* End Site Custom Container *************/
+
+/*# sourceMappingURL=style.css.map */

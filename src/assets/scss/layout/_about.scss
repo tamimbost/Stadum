@@ -1,0 +1,136 @@
+/* ========================
+Start About Area Home 3
+ =------------------------------------*/
+.th__about-area{
+    .th__about-img{
+        z-index: 1;
+        &__item-1{
+            left: 0;
+            top: 0;
+            z-index: 4;
+            height: 488px;
+            @include th__common-position-absolute;
+            @include th__screen-1399{
+                height: 500px;
+            }
+            @include th__screen-1199{
+                position: unset;
+            }
+            @include th__screen-767{
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &__item-2{
+            right: 0;
+            top: 50%;
+            transform: translateY(42%);
+            z-index: 3;
+            height: 488px;
+            @include th__common-position-absolute;
+            @include th__screen-1399{
+                height: 500px;
+                transform: translateY(50%);
+            }
+            @include th__screen-1199{
+                transform: unset;
+                top: 192px;
+                z-index: -1;
+            }
+            @include th__screen-767{
+                position: unset;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+
+            }
+        }
+        &__shep{
+            top: 13px;
+            right: 31%;
+            z-index: 1;
+            animation: th__scalingAnimation 10s linear infinite;
+            @include th__common-position-absolute;
+            @media (max-width:1699px){
+                right: 25%;
+            }
+            @include th__screen-1199{
+                position: unset;
+            }
+            @include th__screen-767{
+                display: none;
+            }
+        }
+        &__shep-2{
+            @include th__common-position-absolute;
+            left: -40px;
+            z-index: 4;
+            top: 450px;
+            animation: th__bounceY 4s linear infinite;
+            @media (max-width:1699px){
+                left: 0;
+            }
+            @include th__screen-1199{
+                top: 0;
+                right: 10px;
+                animation: th__bounceX 4s linear infinite;
+                text-align: right;
+            }
+            @include th__screen-767{
+                display: none;
+            }
+        }
+        &__happy-student{
+            @include th__common-position-absolute;
+            left: 180px;
+            top: 355px;        
+            z-index: 5;
+            width: 255px;
+            height: 270px;
+            @include th__flex-items-center;
+            flex-direction: column;
+            border: 2px solid var(--th__primary-color);
+            animation: th__bounceX 8s linear infinite;
+            @include th__screen-1199{
+                animation: th__bounceY 8s linear infinite;
+                left: 35%;
+                transform: translateY(-50%);
+                top: 40px;
+            }
+            @include th__screen-767{
+                animation: unset;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .th__about-content{
+        padding-left: 70px;
+        @include th__screen-1499{
+            padding-left: 24px;
+        }
+        @include th__screen-1199{
+            padding-left: 0;
+        }
+        .th__about-info-point{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            @include th__screen-767{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            &__list{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    }
+}
+
+ /* ========================
+End About Area Home 3
+ =------------------------------------*/

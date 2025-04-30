@@ -1,0 +1,55 @@
+/* ========================
+ Start Hero Area Home 3
+ =------------------------------------*/
+
+.th__hero-area {
+    // .th__hero-container-extra-style{
+    //     // margin-left: auto;
+    //     // margin-right: unset;
+    //     // padding-left: unset;
+    //     // padding-right: unset;
+    // }
+    &__wrapper {
+        .th__hero-bg-banner {
+            float: right;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                @include th__common-before;
+                width: 100%;
+                left: 0;
+                height: 100%;
+                top: 0;
+                background: linear-gradient(272deg, rgba(3, 6, 14, 0.00) -39.89%, rgba(3, 6, 14, 0.70) 77.99%);
+                z-index: 1;
+            }
+        }
+    }
+
+    .th__hero-content-inner {
+        position: absolute;
+        top: 0;
+        left: calc(12% - 10px);
+        z-index: 1;
+        width: 100%;
+    }
+}
+.anim-path {
+    animation: swapFillStroke 4s linear infinite;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @keyframes swapFillStroke {
+    0%, 49.9% {
+      fill: none;
+      stroke: #D3224D;
+    }
+    50%, 100% {
+      fill: #D3224D;
+      stroke: none;
+    }
+  }
+/* ========================
+ End Hero Area Home 3
+ =------------------------------------*/

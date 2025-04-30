@@ -1,0 +1,155 @@
+/* ========================
+Start Popular Course Home 3
+=------------------------------------*/
+.th__popular-course{
+    z-index: 1;
+    &__shep{
+        left: 33px;
+        bottom: 90px;
+        animation: th__bounceX1 4s linear infinite;
+        @include th__screen-1099{
+            bottom: 30px;
+        }
+        @include th__screen-767{
+            width: 50px;
+        }
+    }
+    &__top-wrapper{
+        @include th__flex-between;
+        @include th__screen-1199{
+            justify-content: center;
+            flex-direction: column;
+        }
+        &__items{
+            .th__title-style{
+                @include th__screen-1199{
+                    text-align: center;
+                }
+            }
+            &:last-child{
+                @include th__flex-items-end;
+            }
+        }
+    }
+    ul{
+        @include th__flex-items-center;
+        justify-content: end;
+        gap: 15px;
+        @include th__screen-1199{
+            justify-content: center;
+        }
+        li{
+            button{
+                &.nav-link{
+                    border-radius: 0;
+                    &.active{
+                        background-color: var(--th__theme-primary-color);
+                        color: var(--th__primary-color);
+                    }
+                }
+            }
+        }
+    }
+    .th__course-content{
+        @include th__screen-1299{
+            padding: 24px;
+        }
+        &:hover{
+            cursor: pointer;
+            .th__title-style-2{
+                .th__title-style-2__title{
+                    a{
+                        color: var(--th__theme-primary-color);
+                    }
+                }
+            }
+            .th__course-content__img{
+                &::before{
+                    animation: th__shine 1s;
+                }
+            }
+        }
+        &__img{
+            z-index: 1;
+            &::before{
+                @include th__common-before;
+                top: 0;
+                left: -80%;
+                z-index: 2;
+                display: block;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+                transform: skewX(-25deg);
+            }
+        }
+        &__whislist-icon{
+            top: 16px;
+            right: 20px;
+            z-index: 2;
+            @include th__common-trans;
+            font-size: 24px;
+            &:hover{
+                color: var(--th__theme-primary-color);
+            }
+        }
+        .th__wishlist-icon {
+            &.active{
+                color: var(--th__theme-primary-color);
+            }
+        }
+        &__review{
+            gap: 8px;
+        }
+        .th__popular-course-meta{
+            flex-wrap: wrap;
+            row-gap: 15px;
+            a{
+                @include th__common-position-relative;
+                &::after{
+                    @include th__common-after;
+                    width: 1px;
+                    height: 16px;
+                    background-color: var(--th__theme-secondary-color);
+                    top: 53%;
+                    transform: translateY(-50%);
+                    @include th__screen-1399{
+                        display: none;
+                    }
+                }
+                &:nth-child(1){
+                    &::after{
+                        right: -35px;
+                        @media (max-width:1575px){
+                            right: -25px;
+                        }
+                        @media (max-width:1450px){
+                            right: -18px;
+                        }
+                    }
+                }
+                &::after{
+                    right: -35px;
+                    @media (max-width:1575px){
+                        right: -25px;
+                    }
+                    @media (max-width:1450px){
+                        right: -18px;
+                    }
+                }
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__enrollment{
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+    }
+}
+/* ========================
+End Popular Course Home 3
+=------------------------------------*/

@@ -1,0 +1,37 @@
+/*
+Theme Name: Mana Agro - Business HTML Template
+Author: Mana Agro
+Author URI: 
+Tags: Mana, business 
+Description: Mana Agro - Business HTML Template
+Version: 1.0.0
+*/
+
+/********* base file **********/
+@import "base/reset";
+@import "base/variables";
+@import "base/breakpoint";
+@import "base/typhograph";
+@import "base/mixin";
+@import "base/color-palet";
+
+
+/******** theme file **********/
+@import "theme/custom-class";
+@import "theme/custom-animation";
+@import "theme/custom-element-animation";
+
+/******** components file ********/
+@import "components/header";
+@import "components/language-swiching.scss";
+@import "components/button";
+@import "components/title";
+@import "components/shep";
+@import "components/review";
+@import "components/meta";
+
+/******** layout file **********/
+@import "layout/hero";
+@import "layout/about";
+@import "layout/course-categories";
+@import "layout/popular-course";

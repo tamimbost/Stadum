@@ -1,0 +1,42 @@
+/* ========================
+ Start Titel
+ =------------------------------------*/
+.th__title-style{
+    &__sub-title{
+        @include th__common-position-relative;
+        display: inline-block;
+        padding-left: 52px;
+        margin-bottom: 2px;
+        &::before{
+            @include th__common-before;
+            width: 36px;
+            height: 2px;
+            background-color: var(--th__theme-primary-color);
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            @include th__common-trans;
+        }
+    }
+    &__title{
+        @include th__screen-767{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+.th__title-style-2{
+    &__title{
+        @include th__screen-1499{
+            font-size: 22px;
+            line-height: 34px;
+        }
+        a{
+            @include th__common-trans;
+        }
+    }
+}
+ /* ========================
+ End Titel
+ =------------------------------------*/

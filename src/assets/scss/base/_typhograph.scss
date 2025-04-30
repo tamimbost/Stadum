@@ -1,0 +1,107 @@
+/********* Start Secondary Font  ***************/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/********* End Secondary Font ***************/
+
+/********* Start Primary Font  ***************/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/********* End Primary Font ***************/
+
+/******** Start Sub Title Font ***********/
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/******* End Sub Title Font ************/
+
+/********* Start Heading Font Size  ***************/
+h1{
+    font-size: var(--th__fs-xxxl);
+    line-height: var(--th__lh-xxxl) ;
+    @include th__screen-991{
+        font-size: 55px;
+        line-height: 72px;
+    }
+}
+h2{
+    font-size: var(--th__fs-xxl);
+    line-height: var(--th__lh-xxl) ;
+    @include th__screen-991{
+        font-size: var(--th__fs-xl);
+        line-height: var(--th__lh-xl) ;
+    }
+}
+h3{
+    font-size: var(--th__fs-xl);
+    line-height: var(--th__lh-xl);
+}
+h4{
+    font-size: var(--th__fs-lg);
+    line-height: var(--th__lh-lg);
+}
+h5{
+    font-size: var(--th__fs-md);
+    line-height: var(--th__lh-md);
+}
+h6{
+    font-size: var(--th__fs-sm);
+    line-height: var(--th__lh-sm);
+}
+/********* End Heading Font Size  ***************/
+
+/********* Start Font Weight ***************/
+.th__fw-100{
+    font-weight: var(--th__fw-thin);
+}
+.th__fw-200{
+    font-weight: var(--th__fw-elight);
+}
+.th__fw-300{
+    font-weight: var(--th__fw-light);
+}
+.th__fw-400{
+    font-weight: var(--th__fw-regular);
+}
+.th__fw-500{
+    font-weight: var(--th__fw-medium);
+}
+.th__fw-600{
+    font-weight: var(--th__fw-sbold);
+}
+.th__fw-700{
+    font-weight: var(--th__fw-bold);
+}
+.th__fw-800{
+    font-weight: var(--th__fw-ebold);
+}
+.th__fw-900{
+    font-weight: var(--th__fw-black);
+}
+/********* End Font Weight ***************/
+
+/********* Start Font Family   ***************/
+.th__font-primary{
+    font-family: var(--th__primary-font);
+}
+.th__font-secondary{
+    font-family: var(--th__secondary-font);
+}
+.th__subfont-title{
+    font-family: var(--th__sub-title-font);
+}
+/********* End Font Family  ***************/
+
+/********* Start Genarel Font Class ***********/
+.th__font-20{
+    font-size: var(--th__fs-md);
+    line-height: var(--th__lh-md);
+}
+.th__font-18{
+    font-size: var(--th__fs-sm);
+    line-height: var(--th__lh-sm);
+}
+.th__font-16{
+    font-size: var(--th__fs-xsm);
+    line-height: var(--th__lh-xsm);
+}
+.th__font-14{
+    font-size: var(--th__fs-xxsm);
+    line-height: var(--th__lh-xxsm);
+}
+/********* End Genarel Font Class ***********/

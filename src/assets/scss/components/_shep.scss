@@ -1,0 +1,39 @@
+/* ========================
+ Start Triangle Shep 
+ =------------------------------------*/
+.th__triangle-shep{
+    svg {
+        width: 134px;
+        height: auto;
+      }
+  
+      .border-path {
+        fill: none;
+        stroke: #D3224D;
+        stroke-width: 1;
+      }
+  
+      .fill-path {
+        fill: #D3224D;
+        opacity: 0;
+      }
+  
+      .fill-left {
+        clip-path: inset(0 100% 0 0);
+        animation: fillFromLeft 2s ease forwards;
+      }
+  
+      .fill-top {
+        clip-path: inset(100% 0 0 0);
+        animation: fillFromTop 2s ease forwards;
+      }
+  
+      .fill-diagonal {
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        animation: fillFromDiagonal 2s ease forwards;
+      }
+  
+}
+ /* ========================
+ End Triangle Shep 
+ =------------------------------------*/

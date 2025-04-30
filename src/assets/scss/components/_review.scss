@@ -1,0 +1,43 @@
+/* ========================
+ Start Review
+ =------------------------------------*/
+ .star-rating {
+    overflow: hidden;
+    position: relative;
+    width: 92px;
+    height: 1.2em;
+    line-height: 1.2em;
+    display: block;
+    font-family: var(--th__icon-font);
+    font-weight: 700;
+    font-size: 14px;
+  
+    &:before {
+      content: '\f005\f005\f005\f005\f005';
+      color: var(--th__theme-light-orange);
+      float: left;
+      letter-spacing: 3px;
+      font-weight: 700;
+    }
+    span {
+      overflow: hidden;
+      float: left;
+      top: 0;
+      left: 0;
+      position: absolute;
+      padding-top: 1.5em;
+  
+      &:before {
+        content: '\f005\f005\f005\f005\f005';
+        top: 0;
+        position: absolute;
+        left: 0;
+        color: var(--th__theme-light-orange);
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+    }
+  }
+ /* ========================
+ End Review
+ =------------------------------------*/
