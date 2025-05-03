@@ -1,0 +1,92 @@
+// Start Why Chooose Area Home 3
+.th__choose-area{
+    background-color: #FFF6F8;
+    z-index: 1;
+    @include th__screen-991{
+        padding-top: 0 !important;
+    }
+    &__shep-1{
+        animation: th__bounceX1 4s linear infinite;
+        @include th__screen-439{
+            display: none;
+        }
+    }
+    &__shep-2{
+        @include th__common-position-absolute;
+        position: absolute;
+        left: 58%;
+        top: 22%;
+        z-index: 2;
+        animation: th__bounceX1 4s linear infinite;
+        @include th__screen-991{
+            left: 43%;
+            top: 48%;
+            rotate: 90deg;
+        }
+        @include th__screen-575{
+            left: 45%;
+            top: 47%;
+            height: 24px;
+        }
+        @include th__screen-439{
+            left: 45%;
+            top: 38%;
+            height: 15px;
+        }
+    }
+    .th__choose-video-banner{
+        position: absolute;
+        top: 0;
+        right:0 ;
+        background-position: center center;
+        height: 100%;
+        width: 40.5%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        &::before{
+            @include th__common-before;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(0deg, rgba(11, 11, 12, 0.20) 0%, rgba(11, 11, 12, 0.20) 100%);
+        }
+        @include th__screen-1299{
+            width: 45.5%;
+        }
+        @include th__screen-991{
+            position: relative;
+            width: 100%;
+            height: 600px;
+            margin-bottom: 60px;
+        }
+        &__play-wrapper{
+            @include th__common-position-absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .th__choose-content{
+        &__options{
+            &__list{
+                gap: 16px;
+                margin-bottom: 15px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &__btn{
+            @include th__flex-items-start;
+            gap: 75px;
+            justify-content: start;
+            a{
+                margin-left: unset;
+                margin-right: unset;
+            }
+        }
+    }
+}
+// End Why Choose Area Home 3

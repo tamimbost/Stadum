@@ -1,0 +1,89 @@
+.th__swiper-arrow-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @include th__screen-991{
+        max-width: max-content;
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+    }
+    .th__swiper-next-arrow,
+    .th__swiper-prev-arrow{
+        width: 48px;
+        height: 48px;
+        line-height: 52px;
+        border-radius: 50%;
+        background-color: var(--th__primary-color);
+        @include th__common-trans;
+        @include th__flex-items-center;
+        display: inline-flex;
+        @include th__common-position-relative;
+        z-index: 99;
+        svg{
+            path{
+                @include th__common-trans;
+            }
+        }
+        &:hover{
+            background-color: var(--th__theme-primary-color);
+            svg{
+                path{
+                    stroke: var(--th__primary-color);
+                }
+            }
+        }
+    }
+    &.style-2{
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 45%;
+        @include th__screen-1199{
+            justify-content: center;
+            width: unset;
+            left: 50%;
+            bottom: 40px;
+            transform: translateX(-50%);
+            top: unset;
+            bottom: unset;
+            margin-top: 40px;
+        }
+        .th__swiper-next-arrow{
+            right: 115px;
+            @include th__screen-1499{
+                right: 95px;
+            }
+            @include th__screen-1399{
+                right: 85px;
+            }
+            @include th__screen-1299{
+                right: 65px;
+            }
+            @include th__screen-1199{
+                right: unset;
+                border: 1px solid var(--th__theme-border-color);
+                &:hover{
+                    border-color: transparent;
+                }
+            }
+        }
+        .th__swiper-prev-arrow{
+            left: -25px;
+            @include th__screen-1499{
+                left: -15px;
+            }
+            @include th__screen-1199{
+                left: unset;
+                border: 1px solid var(--th__theme-border-color);
+                &:hover{
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+ }
+
+//  Swiper Pagination
+// End Swiper Pagination

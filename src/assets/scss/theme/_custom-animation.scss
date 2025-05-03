@@ -214,3 +214,20 @@
     }
 }
 // End Tabing Animation
+
+
+// Start Video Play Button Animation
+@keyframes wave-animation {
+  0% {
+      transform: scale(1);
+      opacity: 0.8;
+  }
+  70% {
+      opacity: 0.2;
+  }
+  100% {
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+// End Video Play Button Animation

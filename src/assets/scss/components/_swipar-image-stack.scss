@@ -1,0 +1,59 @@
+.th__testimonial-client-pictures{
+    .image-stack {
+        width: 41.8%;
+        position: relative;
+        height: 295px;
+        right: -77px;
+        top: 27px;
+
+        @include th__screen-1399{
+            top: 40px;
+        }
+      }
+    
+      .image-stack img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+        opacity: 0;
+        z-index: 0;
+        transform: scale(0.7);
+      }
+    
+      .image-stack img.active {
+        width: 425px;
+        height: auto;
+        left: 0;
+        z-index: 3;
+        opacity: 1;
+        transform: scale(1.8);
+      }
+    
+      .image-stack img.second {
+        width: 360px;
+        left: 50px;
+        z-index: 2;
+        top: 13px;
+        opacity: 1;
+        transform: scale(1.7);
+      }
+    
+      .image-stack img.third {
+        width: 310px;
+        left: 122px;
+        z-index: 1;
+        top: 8px;
+        opacity: 1;
+        transform: scale(1.4);
+      }
+    
+      .image-stack img.rest {
+        width: 310px;
+        left: 70px;
+        z-index: 1;
+        top: 8px;
+        opacity: 1;
+        transform: scale(1.5);
+      }
+}

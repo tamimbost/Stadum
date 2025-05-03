@@ -1,0 +1,33 @@
+// Start Text Sliding Area Home 3
+.th__text-slider-area{
+    &__wrapper{
+        &__inner{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            animation: 20s th__text-slide infinite linear;
+            @include th__screen-991{
+                animation: 10s th__text-slide infinite linear;
+            }
+        }
+    }
+    .th__text-slider-content{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        white-space: nowrap;
+        &__text{
+            font-size: 57px;
+            font-weight: 700;
+            line-height: 0px;
+            letter-spacing: 1.14px;
+        }
+        &__icon{
+            color: var(--th__theme-primary-color);
+            font-size: 40px;
+            @include th__common-position-relative;
+            top: 5px;
+        }
+    }
+}
+// End Text Sliding Area Home 3

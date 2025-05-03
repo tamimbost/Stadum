@@ -3,53 +3,308 @@
  =------------------------------------*/
 
 .th__hero-area {
-    // .th__hero-container-extra-style{
-    //     // margin-left: auto;
-    //     // margin-right: unset;
-    //     // padding-left: unset;
-    //     // padding-right: unset;
-    // }
-    &__wrapper {
-        .th__hero-bg-banner {
-            float: right;
-            position: relative;
-            z-index: 1;
 
-            &::before {
-                @include th__common-before;
-                width: 100%;
-                left: 0;
-                height: 100%;
-                top: 0;
-                background: linear-gradient(272deg, rgba(3, 6, 14, 0.00) -39.89%, rgba(3, 6, 14, 0.70) 77.99%);
-                z-index: 1;
-            }
-        }
+  &::before {
+    @include th__common-before;
+    width: 150px;
+    height: 100%;
+    background-color: #D3224D;
+    z-index: 5;
+    left: 0;
+
+    @include th__screen-767 {
+      width: 80px;
     }
 
-    .th__hero-content-inner {
-        position: absolute;
-        top: 0;
-        left: calc(12% - 10px);
-        z-index: 1;
+    @include th__screen-575 {
+      width: 40px;
+    }
+
+    @include th__screen-439 {
+      display: none;
+    }
+  }
+
+
+  &__wrapper {
+    .th__hero-bg-banner {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      transition: transform 7000ms ease, opacity 1500ms ease-in;
+      transform: scale(1);
+      height: 715px;
+
+      @include th__screen-575 {
+        height: 550px;
+      }
+
+      &::before {
+        @include th__common-before;
         width: 100%;
+        left: 0;
+        height: 100%;
+        top: 0;
+        background: linear-gradient(272deg, rgba(3, 6, 14, 0.00) -39.89%, rgba(3, 6, 14, 0.70) 77.99%);
+        z-index: 1;
+      }
     }
-}
-.anim-path {
-    animation: swapFillStroke 4s linear infinite;
-    transition: all 0.5s ease-in-out;
   }
 
-  @keyframes swapFillStroke {
-    0%, 49.9% {
-      fill: none;
-      stroke: #D3224D;
+  .th__hero-content-inner {
+    position: absolute;
+    top: -550px;
+    z-index: 1;
+    left:150px;
+
+    @include th__screen-767 {
+      left: 80px;
     }
-    50%, 100% {
-      fill: #D3224D;
-      stroke: none;
+
+    @include th__screen-575 {
+      top: -420px;
+      left: 20px;
+    }
+
+    @include th__screen-439 {
+      top: -375px;
+      left: 0;
+    }
+
+    .th__hero-content {
+      position: relative;
+      left: 70px;
+      @include th__screen-1199{
+        left: 30px;
+        width: 85%;
+      }
+      @include th__screen-991{
+        width: 92%;
+      }
+      @include th__screen-575{
+        width: 95%;
+      }
+      @include th__screen-439{
+        width: 100%;
+        left: 0;
+      }
+      &__text {
+        &__title {
+          @include th__screen-991 {
+            br {
+              display: none;
+            }
+          }
+
+          @include th__screen-767 {
+            font-size: 40px;
+            line-height: 52px;
+          }
+
+          @include th__screen-575 {
+            font-size: 30px;
+            line-height: 42px;
+          }
+        }
+
+        &__peragraph {
+          @include th__screen-1199 {
+            br {
+              display: none;
+            }
+          }
+        }
+
+        &__search-fild {
+          @include th__common-position-relative;
+          max-width: max-content;
+
+          @include th__screen-439 {
+            display: none;
+          }
+
+          input {
+            width: 685px;
+            background-color: var(--th__primary-color);
+            border: none;
+            padding: 12px 70px 12px 15px;
+
+            @include th__screen-1199 {
+              width: 500px;
+            }
+
+            @include th__screen-767 {
+              width: 420px;
+            }
+
+            @include th__screen-575 {
+              width: 320px;
+            }
+
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+
+          button {
+            border: none;
+            @include th__common-position-absolute;
+            right: 0;
+            padding: 18.9px 20px;
+            @include th__common-trans;
+
+            &:hover {
+              background-color: var(--th__theme-secondary-color);
+            }
+          }
+        }
+      }
+
+      .th__hero-button {
+        max-width: max-content;
+        position: relative;
+        top: -228px;
+        left: 140%;
+        @media (max-width:1650px){
+          left: 120%;
+        }
+        @include th__screen-1499{
+          left: 110%;
+        }
+        @include th__screen-1399{
+          left: 100%;
+        }
+        @include th__screen-1299{
+          left: 90%;
+        }
+        @include th__screen-1199{
+          display: none;
+        }
+      }
     }
   }
+}
+
+.anim-path {
+  animation: swapFillStroke 4s linear infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes swapFillStroke {
+
+  0%,
+  49.9% {
+    fill: none;
+    stroke: #D3224D;
+  }
+
+  50%,
+  100% {
+    fill: #D3224D;
+    stroke: none;
+  }
+}
+
 /* ========================
  End Hero Area Home 3
  =------------------------------------*/
+
+
+//  Start Hero Swiper Slider Customize
+.th__hero-slider-home-3 {
+  .swiper-slide {
+    &.swiper-slide-active {
+      .th__hero-bg-banner {
+        transform: scale(1.20);
+      }
+    }
+  }
+}
+
+.th__swiper-pagination-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 65px;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  @include th__screen-767 {
+    left: 30px;
+  }
+
+  @include th__screen-575 {
+    left: 10px;
+  }
+
+  @include th__screen-439 {
+    width: 50%;
+    left: 65%;
+    transform: translateX(-50%);
+    bottom: 10px;
+  }
+
+  &::after {
+    @include th__common-after;
+    width: 1px;
+    height: 130px;
+    opacity: 0.5;
+    background: #D3DBE2;
+    top: 35px;
+    left: 8px;
+
+    @include th__screen-439 {
+      display: none;
+    }
+  }
+
+  &::before {
+    @include th__common-before;
+    width: 1px;
+    height: 130px;
+    opacity: 0.5;
+    background: #D3DBE2;
+    bottom: 135px;
+    left: 8px;
+
+    @include th__screen-439 {
+      display: none;
+    }
+  }
+
+  .swiper-pagination {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    @include th__screen-439 {
+      flex-direction: row;
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      border: 1px solid var(--th__theme-border-color) !important;
+      background-color: transparent !important;
+      opacity: 0.5;
+      position: relative;
+
+      &.swiper-pagination-bullet-active {
+        background-color: var(--th__primary-color) !important;
+        opacity: 1;
+
+        &::before {
+          @include th__common-before;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          left: 50%;
+          top: 50%;
+          border: 1px solid var(--th__primary-color);
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+// End Hero Swiper Slider Customize

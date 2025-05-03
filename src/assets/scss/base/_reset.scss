@@ -4,12 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-}
-
-html {
   scroll-behavior: smooth;
+
 }
+
+
 
 body {
   font-family: var(--th__primary-font);
@@ -20,8 +19,60 @@ body {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: hidden;
+  @media (max-width:575px){
+    font-size: var(--th__fs-xsm) !important;
+    -webkit-font-smoothing: antialiased;
+    line-height: var(--th__lh-xsm) !important;
+  }
+}
+.vs-page__main {
+  perspective: 1000px;
+}
+.vs-page__main--layouts {
+  position: relative;
+  z-index: 999;
+}
+html.lenis,
+html.lenis body {
+height: auto;
 }
 
+.lenis.lenis-smooth {
+scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+pointer-events: none;
+}
+/* Custom Scrollbar for the entire website */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #D3224D, #D3224D);
+  border-radius: 15px;
+}
+
+/* Scrollbar on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D3224D transparent;
+}
 ul {
   margin: 0;
   padding: 0;

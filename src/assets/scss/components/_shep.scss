@@ -2,6 +2,16 @@
  Start Triangle Shep 
  =------------------------------------*/
 .th__triangle-shep{
+  &.th__triangle-shep-style-2{
+    .border-path{
+      opacity: 0.3;
+    }
+    .fill-left,
+    .fill-top,
+    .fill-diagonal{
+      opacity: 0.3;
+    }
+  }
     svg {
         width: 134px;
         height: auto;

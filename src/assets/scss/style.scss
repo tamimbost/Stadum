@@ -1,9 +1,8 @@
 /*
-Theme Name: Mana Agro - Business HTML Template
-Author: Mana Agro
-Author URI: 
-Tags: Mana, business 
-Description: Mana Agro - Business HTML Template
+Theme Name: Stadum - Html5 LMS & University HTML Template
+Author: Theme Holy
+Author URI: https://themeforest.net/user/themeholy/portfolio
+Tags: Online Learning, E-Learing, University 
 Version: 1.0.0
 */
 
@@ -23,15 +22,30 @@ Version: 1.0.0
 
 /******** components file ********/
 @import "components/header";
-@import "components/language-swiching.scss";
+@import "components/language-swiching";
 @import "components/button";
-@import "components/title";
 @import "components/shep";
 @import "components/review";
 @import "components/meta";
+@import "components/video-play-btn";
+@import "components/slider-arrow";
+@import "components/swipar-image-stack";
+@import "components/top-to-scroll";
+@import "components/mobile-menu";
 
 /******** layout file **********/
 @import "layout/hero";
+@import "layout/short-info";
 @import "layout/about";
 @import "layout/course-categories";
 @import "layout/popular-course";
+@import "layout/instructors";
+@import "layout/partnars";
+@import "layout/community";
+@import "layout/why-choose";
+@import "layout/mentorship";
+@import "layout/banner";
+@import "layout/blog";
+@import "layout/text-sliding";
+@import "layout/footer";
+@import "layout/testimonial";

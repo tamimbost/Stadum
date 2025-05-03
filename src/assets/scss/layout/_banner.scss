@@ -1,0 +1,113 @@
+// Start Banner Area Home 3
+.th__banner-area{
+    background-color: #FFF6F8;
+    z-index: 1;
+    padding-top: 60px;
+    @include th__screen-1299{
+        padding-top: 0;
+    }
+    @include th__screen-767{
+        padding-top: 80px;
+    }
+    &__shep-1{
+        bottom: 0;
+        right: 55px;
+        z-index: -1;
+        @include th__screen-1099{
+            width: 200px;
+        }
+        @include th__screen-767{
+            display: none;
+        }
+    }
+    &__shep-2{
+        position: absolute;
+        top: 50%;
+        scale: 1.6;
+        z-index: -1;
+        left: 40px;
+        animation: th__bounceY 4s linear infinite;
+        @include th__screen-1399{
+            top: 20%;
+        }
+        @include th__screen-1099{
+            scale: 1;
+        }
+        @include th__screen-767{
+            top: -5%;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        @include th__screen-767{
+            flex-direction: column;
+        }
+    }
+    
+    .th__banner-phone-item{
+        &__mobile{
+            @include th__common-position-relative;
+            bottom: -80px;
+            left: 160px;
+            @include th__screen-1399{
+                left: 0;
+            }
+            @include th__screen-767{
+                bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @include th__screen-767{
+            order: 3;
+            bottom: 0;
+        }
+    }
+    .th__banner-text-content{
+        @include th__common-position-relative;
+        left: 85px;
+        top: 90px;
+        @include th__screen-1399{
+            left: 0;
+        }
+        @include th__screen-1299{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include th__screen-1099{
+            width: 60%;
+        }
+        @include th__screen-991{
+            width: 75%;
+            top: 70px;
+        }
+        @include th__screen-767{
+            order: 1;
+            width: 100%;
+            top: 0;
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+        &__download-btn{
+            @include th__flex-items-center;
+            justify-content: start;
+            gap: 24px;
+            @include th__screen-767{
+                justify-content: center;
+            }
+        }
+    }
+    .th__banner-human{
+        &__picture{
+            @include th__screen-767{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+// End Banner Area Home 3

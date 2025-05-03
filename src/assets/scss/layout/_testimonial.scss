@@ -1,0 +1,50 @@
+// Start Testimonial Area Home 3
+.th__testimonial-area{
+    z-index: 1;
+    &__shep-1{
+        left: 80px;
+        top: 180px;
+        z-index: -1;
+        animation: th__bounceY 4s linear infinite;
+        @include th__screen-991{
+            width: 50px;
+            height: 50px;
+        }
+        @include th__screen-575{
+            top: 10px;
+            left: 14px;
+        }
+    }
+    &__shep-2{
+        top: 85px;
+        right: 180px;
+        animation: th__bounceX 3s linear infinite;
+        @include th__screen-1199{
+            top: 10px;
+            right: 10px;
+        }
+        @include th__screen-575{
+            display: none;
+        }
+    }
+    @include th__screen-1199{
+        padding-bottom: 140px;
+    }
+    .th__testimonial-content{
+        @include th__screen-767{
+            padding: 34px 24px;
+        }
+        &__review{
+            gap: 12px;
+            font-size: 18px;
+        }
+        &__client-say{
+            @include th__screen-575{
+                font-size: var(--th__fs-sm);
+                line-height: var(--th__lh-sm);
+            }
+        }
+    }
+
+}
+// End Testimonial Area Home 3

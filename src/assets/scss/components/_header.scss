@@ -4,7 +4,6 @@
     // Start Top Bar Area
     .th__header-top-bar {
         background-color: var(--th__theme-secondary-color);
-
         .th__topbar-header-info {
             gap: 50px;
 
@@ -59,25 +58,89 @@
     // End Top Bar Area
 
     // Start Menu Area
-    .th__header-btn{
-        .th__mobile-menubar{
+    .sticky-wrapper {
+        position: relative;
+        &.sticky {
+            position: fixed !important;
+            top: 0;
+            animation: th__headerStickyAnimations 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            display: block;
+            width: 100%;
+            z-index: 100;
+            max-width: 100%;
+            box-shadow: 10px 10px 42px -1px rgba(65, 63, 63, 0.15);
+        }
+    }
+
+    .th__menu-area {
+        background-color: #fff;
+        position: relative;
+        padding: 22px 0;
+        z-index: 1;
+        &::before{
+            @include th__common-before;
+            left: 0;
+            background-color: var(--th__theme-primary-color);
+            height: 100%;
+            width: 24%;
+            z-index: -1;
+            top: 0;
+            @media (max-width:1775px){
+                width: 18%;
+            }
+            @include th__screen-1199{
+                width: 100%;
+            }          
+        }
+    }
+
+    .th__menu-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 77.6%;
+        @include th__screen-1399{
+            width: 80.6%;
+        }
+        @include th__screen-1199{
+            width: unset;
+        }
+    }
+
+    .th__header-btn {
+        .th__mobile-menubar {
             font-size: var(--th__fs-sm);
             font-weight: var(--th__lh-sm);
             @include th__common-trans;
             border: 1px solid var(--th__theme-border-color);
             width: 55px;
             height: 55px;
-            border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             line-height: 55px;
             display: none;
-            &:hover{
-                color: var(--th__theme-primary-color);
+            font-size: 25px;
+            color: var(--th__primary-color);
+            &:hover {
+                background-color: var(--th__theme-secondary-color);
+                border-color: transparent;
+                color: var(--th__primary-color);
+            }
+            @include th__screen-1199{
+                display: block;
+                text-align: center;
+            }
+        }
+        .th__primary-button{
+            @include th__screen-1199{
+                display: none;
             }
         }
     }
+
     // End Menu Area
 }
 
@@ -85,26 +148,39 @@
 
 // Start Main Menu
 .main-menu {
+    position: relative;
+    @include th__screen-1199{
+        display: none;
+    }
     ul {
         li {
             display: inline-block;
             @include th__common-position-relative;
-            &:hover{
-                a{
+
+            &:hover {
+                a {
                     color: var(--th__theme-primary-color);
                 }
             }
+
             a {
                 padding: 10px 20px;
                 color: var(--th__theme-secondary-color);
                 @include th__common-trans;
                 @include th__common-position-relative;
+                @include th__screen-1299{
+                    padding: 10px 15px;
+                }
             }
 
             // Only for parent items with submenus
             &.menu-item-has-children {
-                > a {
+                >a {
                     padding-right: 42px;
+                    @include th__screen-1299{
+                        padding-right: 32px;
+                    }
+
                     &::after {
                         content: '\f078';
                         font-family: var(--th__icon-font) !important;
@@ -114,22 +190,28 @@
                         @include th__common-position-absolute;
                         font-size: 14px;
                         @include th__common-trans;
+                        @include th__screen-1299{
+                            right: 10px;
+                        }
                     }
                 }
 
                 &:hover {
-                    > a {
+                    >a {
                         color: var(--th__theme-primary-color);
+
                         &::after {
                             color: var(--th__theme-primary-color);
                             content: '\f077';
                         }
                     }
+
                     .mega-menu,
                     .sub-menu {
                         transform: scaleY(1) translateX(0%);
                         visibility: visible;
                         opacity: 1;
+
                         &::before {
                             width: 100%;
                         }
@@ -224,7 +306,8 @@
                     transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
                     z-index: 10;
                     transform: scaleY(0) translateZ(100px);
-                    &::before{
+
+                    &::before {
                         @include th__common-before;
                         left: 0;
                         top: 0;
@@ -233,18 +316,22 @@
                         background-color: var(--th__theme-primary-color);
                         transition: 0.5s ease-in;
                     }
+
                     li {
                         display: block;
                         margin-bottom: 12px;
-                        &:hover{
-                            a{
+
+                        &:hover {
+                            a {
                                 color: var(--th__theme-primary-color);
                             }
                         }
+
                         a {
-                            padding:0 !important;
+                            padding: 0 !important;
                             color: var(--th__theme-secondary-color);
                             @include th__common-trans;
+
                             // Remove unwanted after element in submenu links
                             &::after {
                                 display: none !important;
@@ -257,4 +344,5 @@
         }
     }
 }
+
 // End Main Menu

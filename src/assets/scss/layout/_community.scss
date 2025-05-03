@@ -1,0 +1,127 @@
+// Start Community Area Home 3
+.th__community-area{
+    @include th__screen-991{
+        padding-top: 0 !important;
+    }
+    .th__community-righ-site-img{
+        position: absolute;
+        top: 0;
+        right:0 ;
+        background-position: center center;
+        height: 100%;
+        width: 40.5%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include th__screen-1299{
+            width: 45.5%;
+        }
+        @include th__screen-991{
+            position: static;
+            width: 100%;
+            height: 600px;
+            margin-bottom: 60px;
+        }
+
+    }
+    &__shep{
+        @include th__common-position-absolute;
+        right: 40px;
+        top: 20px;
+        animation: th__bounceY 4s linear infinite;
+    }
+    .th__title-style
+    {
+        @include th__screen-991{
+            text-align: center;
+        }
+        .th__community-content__discription{    
+            @include th__screen-767{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+    .th__community-content__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+        @include th__screen-1299{
+            grid-template-columns: repeat(1, 1fr);
+            max-width: max-content
+        }
+        @include th__screen-991{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .th__community-content-box{
+            @include th__flex-items-center;
+            justify-content: start;
+            gap: 24px;
+            &:hover{
+                .th__community-content-box__icons{
+                    .th__community-content-box__icon{
+                        transform: rotateY(360deg);
+                    }
+                }
+            }
+            @include th__screen-480{
+                flex-direction: column;
+                column-gap: 20px;
+                justify-content: center;
+            }
+            &__icon{
+                @include th__common-social-media;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border-color: transparent;
+                @include th__common-trans;
+                i{
+                    font-size: 30px;
+                }
+            }
+            &:nth-child(1){
+               .th__community-content-box__icons{
+                    .th__community-content-box__icon{
+                        color: #0EC56D;
+                        background-color: #F4F9F7;
+                    }
+                }
+            }
+            &:nth-child(2){
+                .th__community-content-box__icons{
+                     .th__community-content-box__icon{
+                         color: #E2B93B;
+                         background-color: #FEF9EC;
+                     }
+                 }
+             }
+             &:nth-child(3){
+                .th__community-content-box__icons{
+                     .th__community-content-box__icon{
+                         color: #081933;
+                         background-color: #EEF1F4;
+                     }
+                 }
+             }
+             &:nth-child(4){
+                .th__community-content-box__icons{
+                     .th__community-content-box__icon{
+                         color: #D3224D;
+                         background-color: #FFF6F8;
+                     }
+                 }
+             }
+             &__text{
+                @include th__screen-480{
+                    text-align: center;
+                }
+             }
+        }
+    }
+}
+// End Community Area Home 3

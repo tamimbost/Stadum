@@ -1,4 +1,4 @@
-// GULP 4 + SASS Latest Setup (Fixed)
+// GULP 4 + SASS Latest Setup (Safe Version)
 
 import gulp from 'gulp';
 import fileInclude from 'gulp-file-include';
@@ -10,7 +10,6 @@ import cleanCSS from 'gulp-clean-css';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import imagemin from 'gulp-imagemin';
-import fsExtra from 'fs-extra';
 import sourcemaps from 'gulp-sourcemaps';
 
 const sass = gulpSass(dartSass);
@@ -25,7 +24,13 @@ const paths = {
     css: 'src/assets/css/**/*.css',
     js: 'src/assets/js/**/*.js',
     images: 'src/assets/images/**/*',
-    fonts: 'src/assets/fonts/**/*'
+    fonts: 'src/assets/fonts/**/*',
+    static: [
+      'src/assets/**/*',
+      '!src/assets/scss/**',
+      '!src/assets/css/**',
+      '!src/assets/js/**'
+    ]
   },
   dist: {
     base: 'dist',
@@ -93,9 +98,10 @@ export const fontTask = () => {
     .pipe(gulp.dest(paths.dist.fonts));
 };
 
-// Copy static assets (any extra folder if needed)
+// SAFE static asset copy task (no overwrite of src)
 export const copyAssets = () => {
-  return fsExtra.copy(paths.src.base, paths.dist.base, { overwrite: true });
+  return gulp.src(paths.src.static)
+    .pipe(gulp.dest(paths.dist.assets));
 };
 
 // Watch files
@@ -117,7 +123,7 @@ export const watchFiles = () => {
 // Build
 export const build = gulp.series(
   clean,
-  gulp.parallel(htmlTask, sassTask, cssAssetsTask, jsTask, imageTask, fontTask)
+  gulp.parallel(htmlTask, sassTask, cssAssetsTask, jsTask, imageTask, fontTask, copyAssets)
 );
 
 // Default

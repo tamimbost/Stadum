@@ -31,7 +31,38 @@
       opacity: 1;
     }
   }
-
+  .th__slide__anim-up {
+    animation: th__slide__anim-up 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+    opacity: 0;
+  }
+  @keyframes th__slide__anim-up {
+    0% {
+      transform: translateX(-5%);
+      clip-path: inset(100% 0 0 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+  .th__slide__anim-bottom {
+    animation: th__slide__anim-bottom 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
+    opacity: 0;
+  }
+  @keyframes th__slide__anim-bottom {
+    0% {
+      transform: translateY(-5%);
+      clip-path: inset(0 0 100% 0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
   /****************** Start Jarallax Animation ******************/
   .jarallax {
     position: relative;

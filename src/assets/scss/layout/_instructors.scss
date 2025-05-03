@@ -1,0 +1,120 @@
+// Start Instructros Area Home 3
+.th__instructros-area{
+    background-color: #FFF6F8;
+    z-index: 1;
+    overflow: hidden;
+    @include th__screen-575{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include th__screen-991{
+        padding-bottom: 130px;
+    }
+    &__shep-1{
+        position: absolute;
+        width: 551.931px;
+        height: 551.931px;
+        border-radius: 50%;
+        background: rgba(244, 46, 117, 0.08);
+        filter: blur(150px);
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__shep-2{
+        position: absolute;
+        top: 90px;
+        right:235px;
+        animation: th__bounceY 4s linear infinite;
+        @include th__screen-991{
+            right: 10px;
+            width: 40px;
+        }
+    }
+    &__shep-3{
+        @include th__common-position-absolute;
+        right: 65px;
+        bottom: 65px;
+        animation: th__bounceX1 4s linear infinite;
+        @include th__screen-767{
+            width: 60px;
+            right: 20px;
+        }
+    }
+    &__wrapper-top{
+        @include th__flex-between;
+        @include th__screen-991{
+            display: block;
+            text-align: center;
+        }
+    }
+    .th__instructros-content{
+        @include th__common-position-relative;
+        z-index: 1;
+        &:hover{
+            cursor: pointer;
+            .th__instructros-info{
+                background-color: var(--th__theme-primary-color);
+                .th__instructros-info-inner{
+                    .th__instructros-info__icon{
+                        border-color: transparent;
+                    }
+                    .th__title-style-2__title{
+                        a{
+                            color: var(--th__primary-color);
+                        }
+                    }
+                    .th__instructros-info__work-type{
+                        color: var(--th__primary-color);
+                    }
+                }
+            }
+        }
+        &__image{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 20px 0 20px;
+        }
+        .th__instructros-info{
+            @include th__common-position-absolute;
+            background-color: var(--th__primary-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: calc(100% - 40px);
+            clip-path: polygon(50% 30%, 100% 50%, 100% 100%, 0 100%, 0 50%);
+            height: 245px;
+            margin: auto;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            @include th__common-trans;
+            .th__instructros-info-inner{
+                @include th__common-position-absolute;
+                bottom: 16px;
+                width: 100%;
+                text-align: center;
+            }
+            &__work-type{
+                @include th__common-trans;
+            }
+            &__icon{
+                @include th__common-social-media;
+                background-color: var(--th__primary-color);
+                margin-bottom: 4px;
+            }
+            &__social{
+                margin-top: 8px;
+                a{
+                    @include th__common-social-media;
+                    width: 32px;
+                    height: 32px;
+                    border-color: transparent;
+                }
+                @include th__flex-items-center;
+                gap: 16px;
+            }
+        }
+    }
+}
+// End Instructros Area Home 3

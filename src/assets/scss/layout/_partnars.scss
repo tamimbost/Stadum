@@ -1,0 +1,65 @@
+// Start Partners Area
+.th__partners-area {
+    .th__partners-content {
+        @include th__screen-991 {
+            text-align: center;
+        }
+
+        .th__title-style {
+            &__title {
+                span {
+                    @include th__screen-1299 {
+                        margin-left: 6px;
+                    }
+                }
+
+                @include th__screen-1299 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .th__partners-logo-item {
+        padding-left: 80px;
+        padding-right: 80px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include th__screen-1399 {
+            padding-right: 0;
+        }
+
+        @include th__screen-991 {
+            padding-left: 0;
+        }
+
+        @include th__screen-767 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        a {
+            border: 1px solid var(--th__theme-border-color);
+            position: relative;
+            padding: 95px 0;
+
+            &:hover {
+                img {
+                    scale: 1.1;
+                }
+            }
+
+            img {
+                @include th__common-position-absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include th__common-trans;
+            }
+        }
+    }
+}
+
+// End Partners Area

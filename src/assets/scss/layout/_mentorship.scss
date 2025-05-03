@@ -1,0 +1,68 @@
+// Start Mentorship Area Home 3
+.th__mentor-area{
+    padding-bottom: 30px;
+    @include th__screen-991{
+        padding-bottom: 60px;
+    }
+    .th__mentor-content{
+        @include th__common-position-relative;
+        &:hover{
+            cursor: pointer;
+            .th__mentor-content__img{
+                &::before{
+                    animation: th__shine 1s;
+                }
+            }
+        }
+        &__img{
+            @include th__common-position-relative;
+            overflow: hidden;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -80%;
+                z-index: 2;
+                display: block;
+                width: 50%;
+                height: 100%;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 100%);
+                transform: skewX(-25deg);
+            }
+        }
+        &__info{
+            width: calc(100% - 48px);
+            margin-left: auto;
+            margin-right: auto;
+            background-color: var(--th__theme-section-bg);
+            padding-top: 55px;
+            padding-bottom: 65px;
+            @include th__common-position-relative;
+            top: -90px;
+            padding-left: 20px;
+            padding-right: 20px;
+            @include th__screen-991{
+                top: -40px;
+            }
+            @include th__screen-575{
+                width: calc(100% - 24px);
+            }
+            &:hover{
+                .th__mentor-content__info__title{
+                    color: var(--th__theme-primary-color);
+                }
+            }
+            &__btn{
+                text-align: center;
+            }
+            &__title{
+                @include th__common-trans;
+                @include th__screen-1199{
+                    font-size: var(--th__fs-lg);
+                    line-height: var(--th__lh-lg);
+                }
+            }
+        }
+    }
+}
+// End Mentorship Area Home 3

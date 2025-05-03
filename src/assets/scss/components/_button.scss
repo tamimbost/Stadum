@@ -20,10 +20,13 @@
     &.th__btn-style-2{
         padding: 16px 32px;
     }
+    &.th__btn-style-3{
+        padding: 12px 24px;
+    }
     &.th__secondary-button{
         border: 1px solid var(--th__theme-secondary-color);
         font-size: 16px;
-        padding: 10px 24px;
+        padding: 11px 24px;
         &.btn-style-4{
             padding: 9px 24px;
             border-color: var(--th__theme-border-color);
@@ -48,7 +51,9 @@
             padding: 7px 24px;
             border-color: var(--th__theme-border-color);
         }
-
+        &.btn-style-5{
+            border: 1px solid var(--th__theme-border-color);
+        }
     }
 }
 .th__primary-button:hover{

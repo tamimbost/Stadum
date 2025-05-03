@@ -1,0 +1,130 @@
+// Start Short Info Home 3
+.th__short-info-area{
+    background-color: var(--th__theme-primary-color);
+    overflow: hidden;
+    padding: 16px 0;
+    @include th__screen-1199{
+        background-color: var(--th__primary-color)
+    }
+    &__wrapper{
+        @include th__flex-between;
+
+    }
+    .th__short-info-right-site{
+        z-index: 1;
+        width: 80.6%;
+        @include th__flex-items-center;
+        gap: 60px;
+        @media (max-width:1635px){
+            gap:30px;
+        }
+        @include th__screen-1199{
+            width: 100%;
+            justify-content: space-between;
+        }
+        &::before{
+            @include th__common-before;
+            width: calc(100% + 2000px);
+            left: -55px;
+            height: 100px;
+            background-color: var(--th__primary-color);
+            z-index: -1;
+            @media (max-width:1635px){
+                left: -30px;
+            }
+            @include th__screen-1399{
+                left: 5px;
+            }
+            @include th__screen-1199{
+                display: none;
+            }
+        }
+    }
+    .th__course-info{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 80px;
+        @include th__screen-1399{
+            gap: 65px;
+        }
+        @include th__screen-1199{
+            justify-content: space-between;
+            width: 100%;
+        }
+        @include th__screen-991{
+            justify-content: center;
+            row-gap: 30px;
+            column-gap: 50px;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        &__item{
+            &::after{
+                @include th__common-after;
+                background-color: #D3DBE2;
+                width: 1px;
+                height: 64px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -40px;
+                @include th__screen-1399{
+                    right: -32.5px;
+                }
+                @include th__screen-1199{
+                    display: none;
+                }
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            &__text{
+                &__heading{
+                    @include th__screen-991{
+                        font-size: var(--th__fs-lg);
+                        line-height: var(--th__lh-lg);
+                    }
+                }
+                &__type{
+                    display: block;
+                }
+            }
+        }
+    }
+    &__shep{
+        @include th__screen-1399{
+            display: none;
+        }
+        span{
+            width: 290px;
+            height: 1px;
+            background: #D3DBE2;
+            @media (max-width:1635px){
+                width: 140px;
+            }
+        }
+    }
+    .th__short-info-left-site{
+        @include th__screen-1199{
+            display: none
+        }
+    }
+    &__icons{
+        @include th__flex-items-center;
+        justify-content: start;
+        gap: 16px;
+        a{
+            border: 1px solid var(--th__theme-border-colro);
+            @include th__common-social-media;
+            @include th__common-trans;
+            &:hover{
+                background-color: var(--th__primary-color);
+                border-color: transparent;
+                color: var(--th__theme-primary-color);
+            }
+        }
+    }
+}
+// End Short Info Home 3
