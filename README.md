@@ -87,9 +87,21 @@ Stadum/
 - **jQuery**
 - **Magnific Popup** – for lightboxes
 - **WOW.js** – reveal animations
-- **Owl Carousel** – sliders
+- **Swiper Slider** – sliders
 - **imagesLoaded** – for asset loading
+- **Lenis Js** – for smooth scroll full site
 - **Jarallax** – parallax scrolling
+- **Nice Select** – custom dropdowns
+
+---
+
+## 📦 Plugins & Libraries Used
+
+- **CSS**
+- **Magnific Popup** – for lightboxes
+- **Animated Css** – For Components Animation
+- **Swiper Slider** – sliders
+- **imagesLoaded** – for asset loading
 - **Nice Select** – custom dropdowns
 
 ---
