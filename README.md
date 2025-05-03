@@ -11,6 +11,8 @@ Stadum is a high-quality, fully responsive HTML5 template crafted with precision
 
 > To view the design locally, open `index.html` in your browser after building the project via Gulp.
 
+
+## 🚀 Live Preview Online
 ### 🔥 Option 2: Use VS Code Live Server (Recommended)
 1. Install the **Live Server** extension in VS Code  
 2. Right-click `index.html`  
