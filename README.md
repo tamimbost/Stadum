@@ -7,6 +7,10 @@ Stadum is a high-quality, fully responsive HTML5 template crafted with precision
 
 ---
 
+## 🚀 Live Preview Online
+
+Stadum Live Preview: [https://stadum.vercel.app/](https://stadum.vercel.app/)
+
 ## 🚀 Live Preview Locally
 
 > To view the design locally, open `index.html` in your browser after building the project via Gulp.
@@ -20,8 +24,7 @@ Stadum is a high-quality, fully responsive HTML5 template crafted with precision
 4. It will launch the project at `http://127.0.0.1:5500` in your browser.
 
 
-## 🚀 Live Preview From vs Code or Another Code Editor
- It will launch the project at `https://stadum.vercel.app/` in your browser.
+
 
 ---
 
